@@ -1,0 +1,98 @@
+1. readline/readline.h -> 6
+2. stdio.h -> 2
+3. stdlib.h -> 4
+4. unistd.h -> 15
+5. fcntl.h -> 1
+6. sys/types.h && sys/wait.h -> 4
+7. signal.h -> 5
+8. sys/stat.h -> 3
+9. dirent.h -> 3
+10. string.h -> 1
+11. sys/ioctl.h -> 1
+12. termios.h -> 2
+13. curses.h || termcap.h -> 6
+14. errno.h -> extra
+15. sys/types.h -> extra
+
+1. readline/readline.h
+readline
+rl_clear_history
+rl_on_new_line
+rl_replace_line
+rl_redisplay
+add_history
+
+2. stdio.h
+printf
+perror
+
+3. stdlib.h
+malloc
+free
+exit
+getenv
+
+4. unistd.h 
+write
+access
+read
+close
+fork + (sys/types.h)
+getcwd
+chdir
+unlink
+execve
+dup
+dup2
+pipe
+isatty
+ttyname
+ttyslot
+
+5. fcntl.h
+open
+
+6. sys/types.h && sys/wait.h
+wait 
+waitpid 
+wait3 
+wait4
+
+7. signal.h
+signal
+sigaction
+sigemptyset + (sys/types.h && sys/stat.h)
+sigaddset
+kill + (sys/types.h)
+
+8. sys/stat.h
+stat + (sys/types.h && sys/stat.h)
+lstat + (sys/types.h && sys/stat.h)
+fstat + (sys/types.h && sys/stat.h)
+
+9. dirent.h
+opendir
+readdir
+closedir
+
+10. string.h
+strerror
+
+11. sys/ioctl.h
+ioctl
+
+12. termios.h
+tcsetattr
+tcgetattr
+
+13. curses.h || termcap.h
+tgetent
+tgetflag
+tgetnum
+tgetstr
+tgoto
+tputs
+
+Algumas funções extras para estudar:
+14. errno.h
+15. sys/types.h
